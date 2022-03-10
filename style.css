@@ -1,0 +1,230 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap"); /* підключення шрифту сайт "font" */
+
+/*HEAD*/
+body {
+  background-color: #f1f1f1;
+  color: #0f141e;
+
+  font-size: 16px;
+  font-weight: normal;
+  font-family: "Roboto", sans-serif; /* підключення основи з сайту "font"*/
+}
+
+/*   A CИЛКА*/
+a{
+    text-decoration: none;
+    color: black;
+
+}
+a:hover { /* при наведені мишкою*/
+    text-decoration: underline;
+    
+}
+a:active { /* при нажаті мишкою*/
+    color: blue;
+}
+a:visited { /* зміна коліра силки після його відвідування*/
+color: rgba(75, 73, 72, 0.103);
+}
+
+
+/*SOMETHING*/
+
+.photo1 {
+  border-radius: 28px;
+  width: 200px;
+  box-shadow: 4px 4px 14px rgba(0, 0, 0, 0.25);
+}
+.info p { /* так можна звернутися до "p" в класі info*/
+  color: #86898f;
+  margin: 0;
+  font-style: italic;
+  font-weight: bold;
+  text-decoration: none;
+  /* text-decoration: underline;*/
+  /* letter-spacing: 9px;*/
+  /*word-spacing: 42px;*/
+}
+.container{
+   max-width: 750px;   /* адаптивно з максимальною шириною 750 змінюється залежно від вікна*/ 
+   margin: auto;
+   padding-top: 30px;
+}
+.info-text {
+    margin-left: 40px;
+}
+.info-text h4{
+    margin-bottom: 10px;
+}
+.info {
+    margin-bottom: 20px;
+    display: flex;
+}
+@media(max-width: 700px) { /* при зменшувані розширення ()в даному випадку якщо менше 700px то в умові дисплей з флекса(рядка) змінюється на блок тобто може переноситися*/
+    .info{
+        display: block;
+        text-align: center;
+    }
+}
+/*
+.social {
+    background: green;
+    padding: 15px 20px 25px 30px;
+    margin: 10px;
+    border: 3px solid red;
+    border-bottom: 8px dotted gray;
+}*/
+/*
+.box-model > div  {
+    float: left;
+    background: black;
+    height: 200px;
+    width: 25%;
+    box-sizing: border-box;
+    border: 3px solid yellow;
+
+}*/
+
+/*COLOR*/
+.bg-yellow {
+    background-color: #fff9dc;
+}
+.bg-green {
+    background-color: #e5ffe7;
+}
+.bg-red {
+    background-color: #ffe5e5;
+}
+
+/*CARD*/
+.card {
+    padding: 15px 20px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+}
+.card h2 {
+    margin-bottom: 10px;
+}
+
+/*LIST*/
+
+.list {
+    padding: 0 20px;
+    /*list-style: none;*/
+}
+.list li {
+    color: #86898f;
+    margin-bottom: 10px;
+  
+}
+.link-list {
+    list-style: none;
+    padding: 0;
+}
+.link-list li {
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #ccc;
+}
+
+/* TABLE*/
+
+
+.table {
+    width: 100%;
+}
+.table td{
+padding-bottom: 10px;
+}
+.table td:nth-child(2), /* звернення до 2 та 3 стовпчика таблиці працює лише з дочірнім*/
+.table td:nth-child(3){
+    color: grey;
+}
+/*odd - чотное; even - нечетное
+.table tr:nth-child(odd){
+    background: red;
+}*/
+.contact h2 {
+    text-align: center;
+}
+/* FORMA */
+.form-group label {
+   display: block;
+    font-size: 14px;
+    color: #86898f;
+}
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    box-sizing: border-box;
+    border: none;
+    background: transparent;/* робить повністю прозрачний стиль*/
+    border-bottom: 1px solid #ccc;/*додавання бордера знизу*/
+    color: black;
+    padding: 15px 0 10px;
+    outline: none; /* забираємо бордер після нажаття на інпут*/
+    font-family: inherit; /* стиль наслідується від загального*/
+}
+.parents {
+    display: flex;
+    margin-bottom: 20px;
+    
+}
+.form-group {
+    width: 50%;
+}
+.right {
+    margin-right: 10px;
+}
+.left {
+    margin-left: 10px;
+}
+.btn {
+    background-color: black;
+    color:white;
+    padding: 15px 20px;
+    font-weight: bold;
+    font-family: inherit;
+    border-radius: 20px;
+    cursor: pointer; /* при наведені на кнопку змін.ється курсор*/
+}
+.btn:hover {/* при наведені курсора на кнопку*/
+    opacity: 0.2;/* властивість яка надає прозрачність об'єкту поки наведений курсор від 0.1 до 1(обов'язково крапка)*/
+}
+
+/* POSITION*/
+/*.box {         кнопка знизу справа для звязку
+    position: fixed;
+    bottom: 50px;
+    right: 30px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: lightcoral;
+    ---------------------
+
+    НАВІГАЦІЯ НА САЙТІ
+    .box {
+    position: fixed;
+    top:0px;
+    left: 0px;
+    width: 100%;
+    height: 40px;
+    background: lightcoral;
+}
+}*/
+/*
+.position {
+    border: 4px solid black;
+    margin-top: 40px;
+    padding: 20px;
+}
+.box {
+    position: fixed;
+    top:0px;
+    left: 0px;
+    width: 100%;
+    height: 40px;
+    background: lightcoral;
+}*/
+     
